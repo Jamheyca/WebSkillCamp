@@ -1,0 +1,162 @@
+*,
+*::before,
+::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --body-background-color: #a2cff3;
+    --border-color:#a2cff3;
+    --text-color:black;
+    --button-bg-color:rgb(20, 20, 96);
+    --input-padding:10px;
+    --form-bg-color:rgb(223, 238, 251);
+    --padding:30px 20px;
+    --box-shadow:rgba(0,0,0,0.1);
+    --logo-font-size:20px;
+    --h3-font-size:25px;
+    --transition-duration: 0.3s;
+    --test:#2677bd;
+    --success-color:#0d790d;
+    --error-color:#bb2727;
+}
+body{
+    padding: 20px;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    background-color: var(--body-background-color);
+    transition: background-color var(--transition-duration) ease, color var(--transition-duration) ease;
+
+}
+/* color all elemetns */
+p,h3,label,span{
+    color: var(--text-color);
+}
+#home{
+    cursor: pointer;
+}
+
+h1.logo span{
+    animation: textanimate 2s ease-in-out infinite;
+    display: inline;
+    font-weight: 800;
+    position: absolute;
+    color: violet;
+    font-size: var(--logo-font-size);
+}
+h1.logo span:before{
+    content: "Web";
+    color: orange;
+}
+h1.logo span:after{
+    color: yellow;
+    content: "Camp";
+}
+form{
+    position: relative;
+}
+.login-container{
+    margin: 60px auto 20px;
+    width: 90%;
+    max-width: 500px;
+    background-color: var(--form-bg-color);
+    padding: var(--padding);
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px var(--box-shadow);
+}
+.login-container h3{
+    font-weight: 600;
+    font-size: var(--h3-font-size);
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+.login-container form p{
+    font-weight: normal;
+    font-size: 22px;
+    text-align: center;
+    margin: 22px auto;
+}
+.input-groups{
+    line-height: 35px;
+}
+.input-groups input{
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 16px;
+    padding: var(--input-padding);
+}
+.input-groups input:focus{
+    outline: 1px solid var(--border-color);
+    border-color: transparent;
+}
+.input-groups label{
+    line-height: 25px;
+    font-weight: 600;
+}
+.recovery{
+    float: right;
+    margin-top: 10px;
+}
+button.btn{
+    --text-color:white;
+    margin:10px 0;
+    background-color: var(--button-bg-color);
+    color: var(--text-color);
+    width: 100%;
+    padding: var(--input-padding);
+    border-radius: 30px;
+    border: none;
+    font-size: 18px;
+    transition: opacity 0.25s ease;
+    cursor: pointer;
+}
+button.btn:hover{
+    background-color: var(--button-bg-color);
+    opacity: 0.7;
+}
+.msg{
+    color: red;
+    display: none;
+}
+
+.alreadyAccount{
+    text-align: center;
+    font-weight:500;
+}
+.account-icons{
+    display: flex;
+    width: 100%;
+    padding: var(--padding);
+    justify-content: space-around;
+}
+.account-icons svg{
+    cursor: pointer;
+}
+/* buttons mode */
+#lightmode,
+#darkmode{
+    float: right;
+    padding: var(--input-padding);
+    cursor: pointer;
+    background-color: #fff;
+    border: none;
+}
+#darkmode{
+    background-color:var(--button-bg-color);
+    color: #fff;
+    
+}
+@keyframes textanimate {
+    0%{
+        transform: translateX(0);
+    }50%{
+        transform: translateX(30px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}

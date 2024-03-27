@@ -1,0 +1,415 @@
+*,*::before,
+*::after{
+    padding: 0;
+    border: initial;
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --header-bg-color:#0077C0;
+    --languages-bg-color:#C7EEFF;
+    --text-color-light:#fff;
+    --main-text-color:#443A3A;
+    --text-color-dark:#000;
+    --bg-white:#fff;
+    --link-text-color:#2D2D5E;
+    --section-bg-one:#B2CFFA;
+    --explore-btn:#1D242B;
+    --about-bg:hsl(216, 88%, 84%);
+    --footer-bg-color:#0C2680;
+}
+button{
+    cursor: pointer;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-color: var(--header-bg-color);
+
+}
+svg{
+    cursor: pointer;
+}
+.header_wrapper{
+    margin: 0 auto;
+    max-width: 1400px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;   
+}
+.container h1.logo,
+h1.logo::before,
+h1.logo::after{
+    cursor: pointer;
+    font-size: 24px;
+
+}
+h1.logo a{
+    color: #E07DF9;
+}
+h1.logo{
+    color: #E07DF9;
+    flex-grow: 1;
+}
+h1.logo::before{
+    content: "Web";
+    color: #FFA37B;
+}
+h1.logo::after{
+    content: "Camp";
+    color: #FFE68E;
+}
+nav {
+    flex-grow: .6;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0 20px;
+}
+nav ul li a{
+    color: var(--text-color-light);
+}
+nav ul li a:hover{
+    text-decoration: underline;
+}
+.search_con{
+    background-color: var(--bg-white);
+    display: flex;
+    padding: 3px 10px;
+    border-radius: 100px;
+    width: 100%;
+    margin-right: 50px;
+    max-width: 280px;
+    justify-content: space-between;
+}
+.search_con input{
+    width: 100%;
+    outline: none;
+    background-color: #fff;
+}
+.btn_con button{
+    padding: 5px 8px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+@keyframes btnanimate {
+    0%{
+        transform: translateY(0);
+    }25%{
+        transform: translateY(5px);
+    }50%{
+        transform: translateX(10);
+    }75%{
+        transform: translateY(5px);
+    }100%{
+        transform: translateX(0);
+    }
+}
+.btn_con button#login{
+    background: transparent;
+    color: #fff;
+}
+.btn_con button#signup:hover{
+    box-shadow: 0px 2px 8px rgba(255, 255, 255, 0.4);
+    animation: btnanimate .50s linear 2;
+}
+.btn_con button#login:hover{
+    color: #f9f17d;
+}
+/* need to fix */
+.languages{
+    background-color: var(--languages-bg-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.languages ul{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1400px;
+    padding: 0 30px;
+    max-width: 1400px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.languages li:first-child,
+.languages li:last-child{
+    position: absolute;
+}
+.languages li:first-child{
+    left: 0;
+}
+.languages li:last-child{
+    right: 0;
+}
+.languages a{
+    color: var(--text-color-dark);
+    text-decoration: underline;
+}
+.languages .langauge_wrapper{
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 1490px;
+    position: relative;
+}
+.bar{
+    margin-left:40px;
+    display: none;
+    z-index: 5;
+}
+
+/* Main */
+.txt_container{
+    padding: 100px 0;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+.txt_container p:nth-child(1){
+    font-size: 14px;
+    font-weight: lighter;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+.txt_container h2{
+    font-size: 30px;
+    font-weight: bolder;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 500px;
+    line-height: 30px;
+}
+.txt_container small{
+    font-size: 14px;
+    font-weight: lighter;
+    width: 300px;
+    margin: 10px auto;
+     display: block;
+    line-height: 20px;
+    font-style: italic;
+}
+.txt_container a{
+    font-size: 14px;
+    font-weight: lighter;
+    margin: -5px auto 0;
+    display: block;
+    text-decoration: underline;
+}
+/* Section 1 Popular course */
+.popular_courses{
+/* Rectangle 5 */
+background:var(--section-bg-one);
+width: 100%;
+}
+.popular_courses .txt_container p:nth-child(1){
+    font-weight: 600;
+}
+.popular_courses .txt_container p:nth-child(3){
+    font-weight: lighter;
+    font-size: 14px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+.popular_courses .txt_container h2{
+    margin-bottom: 15px;
+}
+.popular_courses .txt_container strong{
+    font-size: 15px;
+}
+.box_header{
+    transition: 200ms transform ease-in-out;
+}
+.box:hover > .box_header {
+    transform: scale(1.2);
+}
+section{
+    padding: 25px 0;
+}
+.box_container{
+    margin-top: -45px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+}
+.box_container .box{
+    background-color: #fff;
+    width: 30%;
+    max-width:245px;
+    height: 250px;
+    text-align: center;
+}
+.box_container .box_header{
+    border-bottom: 3px solid var(--section-bg-one);
+    width: 100%;
+    padding: 10px;
+}
+.box_container .box_body{
+    width: 100%;
+    padding: 20px;
+}
+/* button */
+.btn_black{
+    background-color: var(--explore-btn);
+    color: var(--bg-white);
+    padding: 10px 40px;
+    display: block;
+    margin: 40px auto;
+    border: 1px solid var(--text-color-light);
+}
+.btn_black
+{
+    transition: transform 200ms ease;
+}
+.btn_black:hover{
+    transform: scale(1.025);
+}
+/* Section 2 VId */
+.vid_wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    margin: 0 auto;
+    width: 90%;
+}
+.vid_wrapper .text{
+    width: 40%;
+}
+.vid_wrapper .text p{
+    margin: 25px 0;
+}
+.vid_wrapper video{
+    width: 50%;
+    height: 100%;
+}
+#more_btn{
+    float: right;
+    margin: 40px 9%;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+}
+@media only screen and (max-width:950px) {
+    nav {
+        position: absolute;
+        background-color:#ddd;
+        z-index: 2;
+        top:50px;
+        width: 100%;
+        left: 0;
+        height: 0;
+        transition: height .45s;
+    }
+    nav.active{
+        height: 94%;
+    }
+    .search_con{
+        position: absolute;
+        z-index: 4;
+        opacity: 0;
+        transition: opacity .25s;
+    }
+    nav.active + .search_con{
+        opacity: 1;
+    }
+    nav ul li{
+        display: block;
+        line-height: 40px;
+        text-align: center;
+        margin: 0 20px;
+    }
+    nav ul,.search_con {
+        position: absolute;
+        top: 200px; /* Adjust as needed */
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+    .header_wrapper .search_con{
+        top: 200px;
+    }     
+    nav ul li a{
+        color: var(--text-color-dark);
+        opacity: 0;
+    }
+    nav.active ul li a{
+        opacity: 1;
+    }
+    .bar{
+        display: block;
+    }
+    /* Popular courses section */
+    .box_container{
+        flex-direction: column;
+        gap: 30px;
+    } 
+    .box_container .box{
+        width: 90%;
+        transition: all 1s ease-in-out;
+        max-width:350px;
+        height: 20%;
+        max-height: 250px;
+    }
+    .popular_courses svg{
+        display: none;
+    }
+    /* Section 2 VId */
+    .vid_wrapper{
+        flex-direction: column-reverse;
+    }
+    .vid_wrapper .text{
+        width: 90%;
+    }
+    .vid_wrapper video{
+        width: 90%;
+    }
+}   
+@media screen and (max-width:600px) {
+        /* Section 2 VId */
+        .vid_wrapper{
+            width: 100%;
+        }
+        .vid_wrapper .text{
+             width: 90%;
+        }
+        .vid_wrapper video{
+            margin-top: -50px;
+            width: 100%;
+        }
+        #more_btn{
+            margin: 0 auto;
+            float: none;
+        }
+}
+@media only screen and (max-width:380px){
+    .btn_con button{
+        position: absolute;
+        top: 400px;
+        z-index: 7;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        background: none;
+        opacity: 0;
+        transition: opacity .30s;
+    }
+    nav.active ~  .btn_con button{
+        opacity: 1;
+    }
+    .btn_con button#login{
+        top: 370px;
+        color: #000;
+    }
+
+    /* main */
+    .txt_container small{
+        width: 200px;
+    }
+}
