@@ -120,9 +120,7 @@ button.btn:hover{
 }
 .msg{
     color: red;
-    display: none;
 }
-
 .alreadyAccount{
     text-align: center;
     font-weight:500;
