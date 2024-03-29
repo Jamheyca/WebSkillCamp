@@ -97,6 +97,7 @@
     --scale:1;
 }
 .each_person:hover::after {
+    /* arrow */
     content: ''; 
     position: absolute; 
     top: 0; 

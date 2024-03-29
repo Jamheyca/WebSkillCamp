@@ -1,0 +1,15 @@
+.privacy{
+    width: 90%;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.25);
+    line-height: 30px;
+    padding: 15px;
+    border-radius: 20px;
+    margin: 70px auto;
+}
+.privacy h2{
+    margin: 30px 0 10px;
+    font-size: 30px;
+}
+.privacy h3{
+    margin: 20px 0;
+}
