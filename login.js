@@ -71,7 +71,7 @@ e.preventDefault();
 
 if (emailElem.value.trim() === email && passwordElem.value.trim() === password) {
 console.log("Login successful");
-window.location.href = 'about.html';
+window.location.href = 'account.html';
 } else {
 console.log("Login failed");
 msgErr.innerHTML = '*Incorrect email';

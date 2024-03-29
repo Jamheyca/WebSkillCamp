@@ -1,0 +1,63 @@
+.account_manage{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.account_manage_wrapper{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    background-color: #D9D9D9;
+    padding: 30px;
+    justify-content: space-between;
+}
+.account_manage h2{
+    margin-bottom: 10px;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.underline{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.img_container{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(62, 149, 152);
+    border-radius: 50%;
+}
+.profile{
+    margin-left: 20px;
+}
+.profile h6{
+    font-size: 2rem;
+}
+.account_changes{
+    border-left: 1px solid black;
+    padding-left: 30px;
+}
+.each_box{
+    background-color:#B2CFFA;
+    margin-top: 80px;
+    cursor: pointer;
+}
+.information_header h4{
+    font-size: 18px;
+    font-weight: lighter;
+}
+.information_header{
+    padding: 20px;
+}
+.information_body{
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.25);
+    line-height: 40px;
+}
+.hide{
+    padding-left: 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease-in;
+}

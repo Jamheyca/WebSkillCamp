@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script defer src="dropdownEffect.js"></script>
+    <script defer src="script.js"></script>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="about.css">    <link rel="stylesheet" href="footer.css">
-    <link rel="stylesheet" href="privacy.css">
+    <link rel="stylesheet" href="account.css">
 </head>
 <body>
     <div class="container">
         <header>
             <div class="header_wrapper">
-                <h1 class="logo"><a href="">Skill</a></h1>
+                <h1 class="logo"><a href="index.html">Skill</a></h1>
                 <nav class="nav">
                     <ul>
                         <li><a href="#">Carrers</a></li>
@@ -27,8 +28,9 @@
                     </svg>
                 </div>
                 <div class="btn_con">
-                    <button id="login">Login</button>
-                    <button id="signup">Signup</button>
+                    <button id="logout">Log Out</button>
+                    <button id="signup" style="display: none;"></button>
+                    <button id="login" style="display: none;"></button>
                 </div>
                 <div class="bar" id="hamburger">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -72,12 +74,14 @@
     <section class="account_manage">
         <h2>My Account</h2>
         <div class="account_manage_wrapper">
-            <div class="img_container">
-                <img src="" alt="">
-            </div>
-            <div class="profile">
-                <h6 class="username">Lorem Ipsum S.</h6>
-                <span class="underline">Student</span>
+            <div class="flex">
+                <div class="img_container">
+                    <img src="" alt="">
+                </div>
+                <div class="profile">
+                    <h6 class="username">Juan Ipsum S.</h6>
+                    <span class="underline">Student</span>
+                </div>
             </div>
             <div class="account_changes">
                 <ul>
@@ -87,45 +91,56 @@
                 </ul>
             </div>
         </div>
+
+        <div class="personal_information">
+            <div class="each_box">
+                <div class="information_header shows" id="show">
+                    <h4>Personal Information</h4>
+                </div>
+                <div class="information_body hide">
+                    <ul class="personal_info">
+                        <li>First Name: <strong>Juan</strong></li>
+                        <li>Last Name: <strong>Dolor</strong></li>
+                        <li>Date of Birth: N/A</li>
+                        <li>Country</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="each_box">
+                <div class="information_header shows">
+                    <h4>Contact Information</h4>
+                </div>
+                <div class="information_body hide">
+                    <ul class="contact_info">
+                        <li>Address: <strong>Juan</strong></li>
+                        <li>Email: <strong>Dolor</strong></li>
+                        <li>Country</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="each_box">
+                <div class="information_header shows">
+                    <h4>Activity Score</h4>
+                </div>
+                <div class="information_body hide">
+                    <ul class="activity_info">
+                    <span>Score: 0</span>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
-    <div class="personal_information">
-        <div class="each_box">
-            <div class="personal_header">
-                <h4>Personal Information</h4>
-            </div>
-            <div class="information_body">
-                <ul class="personal_info hide">
-                    <li>First Name: <strong>Lorem</strong></li>
-                    <li>Last Name: <strong>Dolor</strong></li>
-                    <li>Date of Birth: N/A</li>
-                    <li>Country</li>
-                </ul>
-            </div>
-        </div>
 
-        <div class="each_box">
-            <div class="personal_header">
-                <h4>Contact Information</h4>
-            </div>
-            <div class="Contact_body hide">
-                <ul class="contact_info">
-                    <li>Address: <strong>Lorem</strong></li>
-                    <li>Email: <strong>Dolor</strong></li>
-                    <li>Country</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="each_box">
-            <div class="personal_header">
-                <h4>Activity Score</h4>
-            </div>
-            <div class="activity_body hide">
-                <ul class="activity_info">
-                   <span>Score: 0</span>
-                </ul>
-            </div>
-        </div>
-    </div>
+    <script>
+        const logout = document.getElementById('logout');
+        console.log(logout)
+        logout.onclick = function (){
+            console.log('hasdasd')
+            window.location.href = 'index.html';
+        }
+    </script>
+  
 </body>
 </html>
