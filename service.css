@@ -6,6 +6,8 @@
 .our_service h2,
 .our_service p{
     margin:20px 0;
+    width: 650px;
+    text-align: justify;
 }
 .services_box{
    display: flex;
@@ -20,8 +22,14 @@
 .flex_box{
     background-color:var(--service-bg-box);
     width: 100%;
-    padding: 15px;
+    padding: 15px 15px 50px;
     box-shadow: 0 4px 4px rgba(0,0,0,0.25);
     text-align: justify;
-    max-width: 340px;
+    max-width: 320px;
+}
+@media only screen and (max-width:800px) {
+    .our_service h2,
+    .our_service p{
+        width: 100%;
+    }
 }
