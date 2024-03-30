@@ -19,6 +19,7 @@
     --explore-btn:#1D242B;
     --about-bg:hsl(216, 88%, 84%);
     --footer-bg-color:#0C2680;
+    --service-bg-box:rgba(178, 207, 250,59%);
 }
 button{
     cursor: pointer;
