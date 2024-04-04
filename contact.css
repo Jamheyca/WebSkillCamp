@@ -1,0 +1,101 @@
+body{
+    background-color: #B2CFFA;
+}
+h2{
+    font-size: 30px;
+    text-align: center;
+}
+.contact{
+    margin: 50px auto;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+    padding: 30px 40px;
+    background-color: rgba(255,255,255,0.70);
+}
+.form_con{
+    display: flex;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    background-color: #fff;
+}
+input,textarea{
+    border: 1px solid black;
+}
+.form_con form,
+.contact_info{
+    width: 50%;
+    min-width: 300px;
+    position: relative;
+    padding: 30px;
+}
+.contact_info{
+    background-color: #ddd;
+}
+.contact_info > *{
+    line-height: 30px;
+}
+.form_con form > *{
+    display: block;
+    margin: 0 auto;
+}
+.form_con label{
+    margin-left:18px;
+    line-height: 30px;
+}
+.form_con form input,
+.form_con form textarea{
+    width: 90%;
+    height: 35px;
+    border: 1px solid black;
+    border-radius: 10px;
+    outline: none;
+    padding: 10px;
+}
+.form_con form textarea{
+    height: 100px;
+}
+.form_con form button{
+    display: block;
+    float: right;
+    background-color: rgba(12, 38, 128,1);
+    color: #fff;
+    padding: 10px;
+    margin:15px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.form_con form button:hover{
+    background-color: rgba(12, 38, 128,0.8);
+}
+.social_icons{
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #1A3B49;
+    margin-top: 15px;
+}
+.social_icons svg{
+    width: 40px;
+    height: 30px;
+    margin: 30px 10px;
+}
+.contact_info ul li:nth-child(even){
+    font-weight: 600;
+    margin-left: 15px;
+}
+.form_con .address{
+    margin-top: 50px;
+    line-height: 40px;
+}
+@media only screen and (max-width:800px){
+    .form_con form,
+    .contact_info{
+        min-width: 100%;
+    }
+    .form_con form textarea{
+        height: 150px;
+    }
+    .form_con label{
+        line-height: 50px;
+    }
+}
