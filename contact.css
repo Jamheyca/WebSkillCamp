@@ -19,9 +19,6 @@ h2{
     flex-wrap: wrap;
     background-color: #fff;
 }
-input,textarea{
-    border: 1px solid black;
-}
 .form_con form,
 .contact_info{
     width: 50%;

@@ -6,27 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up</title>
     <link rel="stylesheet" href="login.css">
+    <script defer src="signup.js"></script>
 </head>
 <body>
     <h1 class="logo" id="home"><span>Skill</span></h1>
     <button id="darkmode">Dark Mode</button>
     <button id="lightmode">Light Mode</button>
         <div class="login-container">
-            <form action="" method="post">
+            <form action="login.html" id="form">
                 <h3>Create a WebSkillCamp Account</h3>
                 <p>Be part of our community</p>
 
                 <div class="input-groups">
                     <label for="email">Email</label>
                     <input type="email" name="email" id="email">
-                    <span class="msg">This is an error message</span>
+                    <span class="msg" id="emailErr"></span>
                 </div>
                 <div class="input-groups">
                     <label for="password">Password</label>
                     <input type="password" name="password" id="password">
-                    <span class="msg">This is an error message</span>
+                    <span class="msg" id="errorPass"></span>
                 </div>
-                <button class="btn loginbtn" id="login-btn" name="login" type="submit">Sign up</button>
+                <button class="btn signup" id="signup-btn" name="login" type="submit">Sign up</button>
 
                 <div class="signup-using">
                     <span>or Sign-up using: </span>
@@ -57,31 +58,5 @@
 
         </div>
         <p class="alreadyAccount" id="acc">Don't have an account?<a href="login.html" id="loginLink"> Log In</a></p>
-
-        <script>
-            document.getElementById('darkmode').addEventListener("click", () => {
-                document.documentElement.style.setProperty('--body-background-color', '#1f1f1f');
-                document.documentElement.style.setProperty('--button-bg-color', 'rgb(20, 20, 96)');
-                document.documentElement.style.setProperty('--form-bg-color', '#d0cccc');
-                document.getElementById('acc').style.color="white";
-                document.getElementById('loginLink').style.color="#2677bd";
-            });
-
-            document.getElementById('lightmode').addEventListener("click", () => {
-                // Reset to original values
-                document.documentElement.style.removeProperty('--body-background-color');
-                document.documentElement.style.removeProperty('--text-color');
-                document.documentElement.style.removeProperty('--button-bg-color');
-                document.documentElement.style.removeProperty('--form-bg-color');
-                document.getElementById('acc').style.color="black";
-                
-            });
-
-            // back to home
-            const home = document.getElementById('home');
-            home.addEventListener("click",()=>{
-            window.location.href = 'index.html';
-            });
-        </script>
 </body>
 </html>

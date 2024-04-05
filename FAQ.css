@@ -1,0 +1,46 @@
+.faq{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.faq h1{
+    font-size: 30px;
+}
+.faq .faq_text{
+    margin-top: 20px;
+}
+.faq .faq_text p{
+    margin-top: 20px;
+}
+.faq .faq_text p:last-child{
+    margin-bottom: 10px;
+}
+.faq_questions .box{
+    border: 1px solid black;
+    padding: 20px 25px;
+    cursor: pointer;
+    border-radius: 50px;
+    font-weight: bold;
+    margin-top: 20px;
+    background-color: rgba(178, 207, 250,.59);
+}
+.faq_questions .box:nth-child(even){
+    background-color: #fff;
+}
+.faq_btn{
+    width: 100%;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.faq_btn button.btn{
+    background-color:#0C2680 ;
+    border-radius: 5px;
+    width: 120px;
+    color: #fff;
+    font-weight: bold;
+    padding: 15px 25px;
+}
+.faq_btn button.btn:hover{
+    background-color:rgb(12, 38, 128,.9) ;
+}
